@@ -36,7 +36,7 @@
     <repository>
       <id>github</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/jcansdale-test/*</url>
+      <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
     </repository>
   </repositories>
 
