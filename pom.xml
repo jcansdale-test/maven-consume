@@ -28,8 +28,8 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
-      <version>1.0.3</version>
-    </dependency>    
+      <version>1.0-snapshot</version>
+    </dependency>
   </dependencies>
 
   <repositories>
