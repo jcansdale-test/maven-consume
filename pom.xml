@@ -32,6 +32,14 @@
     </dependency>    
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>github</id>
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/jcansdale-test/*</url>
+    </repository>
+  </repositories>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
