@@ -1,0 +1,32 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>github</id>
+          <name>GitHub OWNER Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/jcansdale-test/*</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <!-- Public token with `read:packages` scope -->
+      <username>jcansdale-robot</username>
+      <password>&#x31;&#x36;&#x31;&#x39;&#x37;&#x37;&#x36;&#x63;&#x36;&#x39;&#x36;&#x30;&#x33;&#x38;&#x66;&#x35;&#x32;&#x33;&#x30;&#x39;&#x39;&#x37;&#x63;&#x30;&#x35;&#x38;&#x39;&#x33;&#x64;&#x33;&#x33;&#x39;&#x61;&#x36;&#x34;&#x30;&#x30;&#x39;&#x66;&#x66;</password>
+    </server>
+  </servers>
+
+</settings>
