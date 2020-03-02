@@ -10,16 +10,36 @@ Added the following element to  `pom.xml`:
 </dependency>  
 ```
 
-Added package repository configuration to `pom.xml`:
+Create a `settings.xml` file for this repository:
+
+I'm including an XML encoded token because I don't want it be automatically deleted by GitHub when it appears on a public repository. The token is a PAT from an account that doesn't own any private packages and is therefore safe to share.
 
 ```xml
-  <repositories>
-    <repository>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
       <id>github</id>
-      <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://jcansdale-robot:&#x31;&#x36;&#x31;&#x39;&#x37;&#x37;&#x36;&#x63;&#x36;&#x39;&#x36;&#x30;&#x33;&#x38;&#x66;&#x35;&#x32;&#x33;&#x30;&#x39;&#x39;&#x37;&#x63;&#x30;&#x35;&#x38;&#x39;&#x33;&#x64;&#x33;&#x33;&#x39;&#x61;&#x36;&#x34;&#x30;&#x30;&#x39;&#x66;&#x66;@maven.pkg.github.com/jcansdale-test/*</url>
-    </repository>
-  </repositories>
+      <username>jcansdale-robot</username>
+      <!-- Public token with `read:packages` scope -->
+      <password>&#50;&#57;&#100;&#55;&#50;&#97;&#49;&#98;&#53;&#54;&#50;&#55;&#48;&#101;&#54;&#97;&#99;&#101;&#53;&#51;&#49;&#55;&#102;&#102;&#49;&#98;&#52;&#52;&#52;&#50;&#97;&#54;&#99;&#51;&#99;&#101;&#100;&#57;&#101;&#100;</password>
+    </server>
+  </servers>
+</settings>
+```
+
+If you have Docker installed, you can XML encode a token like this:
+
+```
+docker run jcansdale/gpr xmlEncode TOKEN
+```
+
+Add `.mvn/maven.config` to use local settings file by default:
+
+```
+-s settings.xml
 ```
 
 ## Building the project
