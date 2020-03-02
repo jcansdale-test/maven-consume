@@ -28,7 +28,7 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
-      <version>1.0-snapshot</version>
+      <version>1.1-SNAPSHOT</version>
       <snapshots>
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
