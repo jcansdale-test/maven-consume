@@ -29,6 +29,10 @@
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
       <version>1.0-snapshot</version>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
     </dependency>
   </dependencies>
 
