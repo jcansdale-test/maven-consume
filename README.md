@@ -12,6 +12,8 @@ Added the following element to  `pom.xml`:
 
 Create a `settings.xml` file for this repository:
 
+I'm including an XML encoded token because I don't want it be automatically deleted by GitHub when it appears on a public repository. The token is a PAT from an account that doesn't own any private packages and is therefore safe to share.
+
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -26,6 +28,12 @@ Create a `settings.xml` file for this repository:
     </server>
   </servers>
 </settings>
+```
+
+If you have Docker installed, you can XML encode a token like this:
+
+```
+docker run jcansdale/gpr xmlEncode TOKEN
 ```
 
 Add `.mvn/maven.config` to use local settings file by default:
