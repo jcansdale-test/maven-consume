@@ -6,7 +6,7 @@
     <server>
       <id>github</id>
       <username>jcansdale-test</username>
-      <password>4f822bd09fb7ee455fbf06144d3d16fe59ffcf1f</password>
+      <password>${token}</password>
     </server>
   </servers>
 </settings>
