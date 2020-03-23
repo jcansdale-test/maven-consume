@@ -53,3 +53,5 @@ mvn package
 ```
 mvn dependency:purge-local-repository
 ```
+
+Note: made `jcansdale-test/maven-test` private.
