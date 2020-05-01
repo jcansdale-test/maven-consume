@@ -28,7 +28,7 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
-      <version>1.3-20200303.141839-2</version>
+      <version>1.3-20200303.141838-2</version>
     </dependency>
   </dependencies>
 
