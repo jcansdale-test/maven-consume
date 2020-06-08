@@ -34,9 +34,9 @@
 
   <repositories>
     <repository>
-      <id>github</id>
-      <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
+      <id>maven-test</id>
+      <name>GitHub Packages</name>
+      <url>https://token:${token}@maven.pkg.github.com/jcansdale-test/maven-test</url>
       <snapshots>
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
