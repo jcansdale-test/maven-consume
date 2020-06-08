@@ -16,5 +16,4 @@ jobs:
     - name: Build with Maven
       run: mvn package
       env:
-        USERNAME: ${{ github.actor }}
-        PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
