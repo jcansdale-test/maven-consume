@@ -33,7 +33,7 @@ I'm including an XML encoded token because I don't want it be automatically dele
 If you have Docker installed, you can XML encode a token like this:
 
 ```
-docker run jcansdale/gpr xmlEncode TOKEN
+docker run jcansdale/gpr encode TOKEN
 ```
 
 Add `.mvn/maven.config` to use local settings file by default:
