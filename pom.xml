@@ -35,7 +35,7 @@
   <repositories>
     <repository>
       <id>maven-test</id>
-      <url>https://token:${token}@maven.pkg.github.com/jcansdale-test/maven-test</url>
+      <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
     </repository>
   </repositories>
 
