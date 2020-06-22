@@ -16,9 +16,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-    
-    <!-- PAT for jcansdale-robot with `read:packages` scope -->
-    <token>&#50;&#57;&#100;&#55;&#50;&#97;&#49;&#98;&#53;&#54;&#50;&#55;&#48;&#101;&#54;&#97;&#99;&#101;&#53;&#51;&#49;&#55;&#102;&#102;&#49;&#98;&#52;&#52;&#52;&#50;&#97;&#54;&#99;&#51;&#99;&#101;&#100;&#57;&#101;&#100;</token>
   </properties>
 
   <dependencies>
