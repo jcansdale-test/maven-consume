@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build with Maven
-      run: mvn package
+      run: mvn package -Dtoken=${{ secrets.GITHUB_TOKEN }}
