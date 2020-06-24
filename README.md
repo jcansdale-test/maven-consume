@@ -12,7 +12,7 @@ Added the following element to  `pom.xml`:
 
 Create a `settings.xml` file for this repository:
 
-I'm including an XML encoded token because I don't want it be automatically deleted by GitHub when it appears on a public repository. The token is a PAT from an account that doesn't own any private packages and is therefore safe to share.
+I'm including an XML encoded token because I don't want it be automatically deleted by GitHub when it appears on a public repository. The token is a PAT with the `read:packages` scope from an account that doesn't own any private packages and is therefore safe to share.
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -30,7 +30,7 @@ I'm including an XML encoded token because I don't want it be automatically dele
 </settings>
 ```
 
-If you have Docker installed, you can XML encode a token like this:
+If you have Docker installed, you can XML encode a `read:packages` scoped token like this:
 
 ```
 docker run jcansdale/gpr encode TOKEN
