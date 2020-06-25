@@ -34,7 +34,7 @@
 
   <repositories>
     <repository>
-      <id>github</id>
+      <id>maven-test</id>
       <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
     </repository>
   </repositories>
