@@ -1,13 +1,22 @@
 ## Adding package dependency
 
-Added the following element to  `pom.xml`:
+Added the following elements to  `pom.xml`:
 
 ```xml
-<dependency>
-    <groupId>com.mycompany.app</groupId>
-    <artifactId>my-app</artifactId>
-    <version>1.0.3</version>
-</dependency>  
+<dependencies>
+    <dependency>
+        <groupId>com.mycompany.app</groupId>
+        <artifactId>my-app</artifactId>
+        <version>1.3-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+
+<repositories>
+    <repository>
+        <id>maven-test</id>
+        <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
+    </repository>
+</repositories>
 ```
 
 Create a `settings.xml` file for this repository:
@@ -21,7 +30,7 @@ I'm including an XML encoded token because I don't want it be automatically dele
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>github</id>
+      <id>maven-test</id>
       <username>jcansdale-robot</username>
       <!-- Public token with `read:packages` scope -->
       <password>&#50;&#57;&#100;&#55;&#50;&#97;&#49;&#98;&#53;&#54;&#50;&#55;&#48;&#101;&#54;&#97;&#99;&#101;&#53;&#51;&#49;&#55;&#102;&#102;&#49;&#98;&#52;&#52;&#52;&#50;&#97;&#54;&#99;&#51;&#99;&#101;&#100;&#57;&#101;&#100;</password>
