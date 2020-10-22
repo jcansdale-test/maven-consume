@@ -14,10 +14,12 @@ Added the following elements to  `pom.xml`:
 <repositories>
     <repository>
         <id>maven-test</id>
-        <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url>
+        <url>https://maven.pkg.github.com/jcansdale-test/*</url>
     </repository>
 </repositories>
 ```
+
+_Note, we can use `https://maven.pkg.github.com/jcansdale-test/*` as the repository URL. The repository name is only significant when publishing packages._
 
 Create a `settings.xml` file for this repository:
 
