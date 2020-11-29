@@ -1,0 +1,25 @@
+$ docker run jcansdale/gpr encode READ_PACKAGES_TOKEN
+
+An encoded token can be included in a public repository without being automatically deleted by GitHub.
+These can be used in various package ecosystems like this:
+
+A NuGet `nuget.config` file:
+<packageSourceCredentials>
+  <github>
+    <add key="Username" value="PublicToken" />
+    <add key="ClearTextPassword" value="&#82;&#69;&#65;&#68;&#95;&#80;&#65;&#67;&#75;&#65;&#71;&#69;&#83;&#95;&#84;&#79;&#75;&#69;&#78;" />
+  </github>
+</packageSourceCredentials>
+
+A Maven `settings.xml` file:
+<servers>
+  <server>
+    <id>github</id>
+    <username>PublicToken</username>
+    <password>&#82;&#69;&#65;&#68;&#95;&#80;&#65;&#67;&#75;&#65;&#71;&#69;&#83;&#95;&#84;&#79;&#75;&#69;&#78;</password>
+  </server>
+</servers>
+
+An npm `.npmrc` file:
+@OWNER:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken="\u0052\u0045\u0041\u0044\u005f\u0050\u0041\u0043\u004b\u0041\u0047\u0045\u0053\u005f\u0054\u004f\u004b\u0045\u004e"
