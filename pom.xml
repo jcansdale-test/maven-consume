@@ -39,6 +39,14 @@
     </repository>
   </repositories>
 
+  <distributionManagement>
+    <repository>
+      <id>maven-test</id> <!-- this needs to match server id in settings.xml -->
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/jcansdale-test/maven-test</url> <!-- associated repository -->
+    </repository>
+  </distributionManagement>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
