@@ -26,9 +26,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.mycompany.app</groupId>
-      <artifactId>my-app</artifactId>
-      <version>1.3-SNAPSHOT</version>
+      <groupId>com.octokat.app</groupId>
+      <artifactId>octokat-app</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
