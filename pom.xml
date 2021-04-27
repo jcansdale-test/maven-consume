@@ -7,15 +7,15 @@
   <version>1.0-SNAPSHOT</version>
   <dependencies>
     <dependency>
-      <groupId>com.octokat.app</groupId>
-      <artifactId>octokat-app</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>    
+      <groupId>com.mycompany.app</groupId>
+      <artifactId>my-app</artifactId>
+      <version>1.3-SNAPSHOT</version>    
+  </dependency>    
   </dependencies>
   <repositories>
     <repository>
       <id>github-public</id>
-      <url>https://public:&#50;9d72a1b56270e6ace5317ff1b4442a6c3ced9ed@maven.pkg.github.com/github-packages-examples/*</url>
+      <url>https://public:&#50;9d72a1b56270e6ace5317ff1b4442a6c3ced9ed@maven.pkg.github.com/jcansdale-test/*</url>
     </repository>
   </repositories>
 </project>
