@@ -35,7 +35,8 @@
   <repositories>
     <repository>
       <id>maven-test</id>
-      <url>https://maven.pkg.github.com/jcansdale-test/*</url>
+      <!-- Public token with `read:packages` scope -->
+      <url>https://public:&#50;9d72a1b56270e6ace5317ff1b4442a6c3ced9ed@maven.pkg.github.com/jcansdale-test/*</url>
     </repository>
   </repositories>
 
